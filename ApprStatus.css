@@ -10,6 +10,9 @@
 .f10 {
     font-size: 10px;
 }
+.f12 {
+    font-size: 12px;
+}
 .f8 {
     font-size: 8px;
 }
@@ -19,9 +22,25 @@
 .bgpending {
     background-color: rgba(255, 166, 0, 0.1);
 }
+.bgapproved {
+    background-color: rgba(10, 243, 10, 0.1);
+}
 .bgcritical {
     background-color: rgba(255, 38, 0, 0.1);
 }
 .bggreen {
     background-color: rgba(10, 243, 10, 0.1);
+}
+.bgcoll {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+.modalSc {
+    height:400px;
+    overflow-y: scroll;
+  }
+.fpending {
+    color: rgba(255, 0, 0, 0.3);
+}
+.fapproved {
+    color:rgba(0, 100, 0, 0.3);
 }

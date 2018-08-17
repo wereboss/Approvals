@@ -33,7 +33,7 @@
                 "Id":5,
                 "pptId": 2,
                 "Approver": "Reg BISO",
-                "Status": "Pending",
+                "Status": "Approved",
                 "PptOn": "dd/mm/yyyy"
             },
             {
@@ -48,6 +48,13 @@
                 "pptId": 3,
                 "Approver": "Reg Fraud",
                 "Status": "Pending",
+                "PptOn": "dd/mm/yyyy"
+            },
+            {
+                "Id":8,
+                "pptId": 5,
+                "Approver": "Reg Fraud",
+                "Status": "Approved",
                 "PptOn": "dd/mm/yyyy"
             }
         ]
