@@ -19,6 +19,9 @@
 .bgalpha {
     opacity:0.1; 
 }
+.tacenter {
+    text-align: center;
+}
 .bgpending {
     background-color: rgba(255, 166, 0, 0.1);
 }
@@ -36,6 +39,15 @@
 }
 .modalSc {
     height:400px;
+    overflow-y: scroll;
+  }
+
+.cardSc {
+    height:350px;
+    overflow-y: scroll;
+  }
+.cardSc2 {
+    height:250px;
     overflow-y: scroll;
   }
 .fpending {
