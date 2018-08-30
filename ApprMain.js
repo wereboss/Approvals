@@ -15,13 +15,13 @@ function genCountText(Approvals) {
     sC = "";
   iT = Approvals.length;
   for (let ini = 0; ini < Approvals.length; ini++) {
-    if (Approvals[ini].Status == "Approved") {
+    if (Approvals[ini].Status != "Approved") {
       iC += 1;
     }
   }
-  if (iC / iT < 0.3) {
+  if (iC / iT > 0.66) {
     sC = "bgcritical";
-  } else if (iC / iT < 0.6) {
+  } else if (iC / iT > 0.33) {
     sC = "bgpending";
   } else {
     sC = "";
@@ -151,7 +151,8 @@ $(function() {
       .replace("#CardContent#", tHtml);
     mStr += strtemp2;
   }
-  $("#Scheduled").html(htmlStr + mStr);
+  $("#Scheduled").html(htmlStr);
+  $("#modallist").append(mStr);
   htmlStr = "";
   mStr = "";
   tHtml = "";
@@ -209,7 +210,8 @@ $(function() {
   //console.log("Changed Pen Card" + tHtml);
   //console.log("Changed Pen Modal" + mStr);
 
-  $("#Pending").html(htmlStr + mStr);
+  $("#Pending").html(htmlStr);
+  $("#modallist").append(mStr);
 
   strACsinP = $("#ApproverCont").html();
   if (arrApprovers.ApprArray.length > 0) {
@@ -275,7 +277,8 @@ $(function() {
   //console.log("Changed App Card" + tHtml);
   //console.log("Changed App Modal" + mHtml);
 
-  $("#Approved").html(htmlStr + mStr);
+  $("#Approved").html(htmlStr);
+  $("#modallist").append(mStr);
   htmlStr = "";
   //clean up
   $("#ModalContainer").html(sModStr);

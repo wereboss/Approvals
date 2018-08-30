@@ -33,89 +33,100 @@
         <h1 class="display-6">Reg Governance - Approval Tracking</h1>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h1 class=" lead"> Grouped by Approval Status
-                        </h1>
-                    </div>
-                    <div class="card-body cardSc">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="card" style="height: 100%;">
-                                    <div class="card-header">
-                                        <h3 class="lead"> Scheduled</h3>
-                                    </div>
-                                    <div id="Scheduled" class="card-body">
-                                        <div class="card">
-                                            <div class="card-header " data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
-                                                #pptTitle#
-                                            </div>
-                                            <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
-                                                <p class="text-muted p-0 m-0 f12"> #pptDesc#</p>
-                                                <p class="text-muted p-0 m-0">
-                                                    <button type="button" class="btn btn-link f8 m-0 p-0" data-toggle="modal" data-target="#Modal#num#">
-                                                        Read More...
-                                                    </button>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="height: 100%;">
-                                    <div class="card-header">
-                                        <h3 class="lead"> Pending</h3>
-                                    </div>
-                                    <div id="Pending" class="card-body">
-                                        <div class="card">
-                                            <div class="card-header #bg#" data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
-                                                <div class="row m-0 p-0">
-                                                    <div class="col-sm-10 m-0 p-0">
-                                                        #pptTitle#
-                                                    </div>
-                                                    <div class="col-sm-2 m-0 p-0">
-                                                        <p class="text-muted lead f18 m-0 p-0" style="text-align: center;">#count#</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
-                                                <p class="text-muted p-0 m-0 f12"> #pptDesc#</p>
-                                                <p class="text-muted f8 p-0 m-0"><button type="button" class="btn btn-link f8  m-0 p-0"
-                                                        data-toggle="modal" data-target="#Modal#num#">
-                                                        Read More...
-                                                    </button></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active mynav lead" data-toggle="tab" href="#ppttab">PRESENTATIONS</a></li>
+            <li class="nav-item"><a class="nav-link mynav lead" data-toggle="tab" href="#apprtab">APPROVAL GROUPS</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="ppttab" class="tab-pane active">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="display-5 lead"> 
+                                </h4>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="height: 100%;">
-                                    <div class="card-header">
-                                        <h3 class="lead"> Approved</h3>
-                                    </div>
-                                    <div id="Approved" class="card-body">
-                                        <div class="card">
-                                            <div class="card-header #bg#" data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
-                                                <div class="row m-0 p-0">
-                                                    <div class="col-sm-10 m-0 p-0">
+                            <div class="card-body cardSc">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="card" style="height: 100%;">
+                                            <div class="card-header">
+                                                <h3 class="lead"> Scheduled</h3>
+                                            </div>
+                                            <div id="Scheduled" class="card-body">
+                                                <div class="card">
+                                                    <div class="card-header " data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
                                                         #pptTitle#
                                                     </div>
-                                                    <div class="col-sm-2 m-0 p-0">
-                                                        <p class="text-muted lead f18 m-0 p-0" style="text-align: center;">#count#</p>
+                                                    <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
+                                                        <p class="text-muted p-0 m-0 f12"> #pptDesc#</p>
+                                                        <p class="text-muted p-0 m-0">
+                                                            <button type="button" class="btn btn-link f8 m-0 p-0" data-toggle="modal" data-target="#Modal#num#">
+                                                                Read More...
+                                                            </button>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
-                                                <p class="text-muted p-0 m-0 f12"> #pptDesc# </p>
-                                                <p class="text-muted f8 p-0 m-0"><button type="button" class="btn btn-link f8  m-0 p-0"
-                                                        data-toggle="modal" data-target="#Modal#num#">
-                                                        Read More...
-                                                    </button></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="height: 100%;">
+                                            <div class="card-header">
+                                                <h3 class="lead"> Pending</h3>
+                                            </div>
+                                            <div id="Pending" class="card-body">
+                                                <div class="card">
+                                                    <div class="card-header #bg#" data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="col-sm-2 m-0 p-0 f10">Nov-19</div>
+                                                            <div class="col-sm-8 m-0 p-0">
+                                                                #pptTitle#
+                                                            </div>
+                                                            <div class="col-sm-2 m-0 p-0">
+                                                                <p class="text-muted lead f18 m-0 p-0" style="text-align: center;">#count#</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
+                                                        <p class="text-muted p-0 m-0 f12"> #pptDesc#</p>
+                                                        <p class="text-muted f8 p-0 m-0"><button type="button" class="btn btn-link f8  m-0 p-0"
+                                                                data-toggle="modal" data-target="#Modal#num#">
+                                                                Read More...
+                                                            </button></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card" style="height: 100%;">
+                                            <div class="card-header">
+                                                <h3 class="lead"> Approved</h3>
+                                            </div>
+                                            <div id="Approved" class="card-body">
+                                                <div class="card">
+                                                    <div class="card-header #bg#" data-toggle="collapse" href="#collapse#num#" aria-expanded="false" aria-controls="collapse#num#">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="col-sm-10 m-0 p-0">
+                                                                #pptTitle#
+                                                            </div>
+                                                            <div class="col-sm-2 m-0 p-0">
+                                                                <p class="text-muted lead f18 m-0 p-0" style="text-align: center;">#count#</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="collapse#num#" class="card-body p-2 collapse bgcoll">
+                                                        <p class="text-muted p-0 m-0 f12"> #pptDesc# </p>
+                                                        <p class="text-muted f8 p-0 m-0"><button type="button" class="btn btn-link f8  m-0 p-0"
+                                                                data-toggle="modal" data-target="#Modal#num#">
+                                                                Read More...
+                                                            </button></p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -125,15 +136,17 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="lead"> Grouped by Approver Teams</h3>
-                    </div>
-                    <div class="card-body cardSc">
-                        <div id="ApprCard" class="card-columns">
+            <div id="apprtab" class="tab-pane">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="lead"> </h3>
+                            </div>
+                            <div class="card-body cardSc">
+                                <div id="ApprCard" class="card-columns">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,6 +248,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="modallist">
+
     </div>
     <div class="modal" id="ApproverCard" tabindex="-1" role="dialog" aria-labelledby="Modal#num#Label" aria-hidden="true">
         <div class="card p-0">
