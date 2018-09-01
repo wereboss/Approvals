@@ -20,8 +20,8 @@
                 async: false
             });
             $.getJSON(eInput.val(), function (data) {
-                console.log("StringiFy JSON Data" + JSON.stringify(data));
-                eText.text(JSON.stringify(data));
+                //console.log("StringiFy JSON Data" + JSON.stringify(data));
+                eText.html(JSON.stringify(data).replace(/{/g, "{<br>").replace(/}/g, "}<br>"));
                 /*
                 $.each(data.d.results, function (ini, it) {
                     //console.log("Inside PPT List Data:" + JSON.stringify(data));
@@ -50,7 +50,7 @@
     <div class="container">
         <input id="jsoninput" type="text">
         <input class="btn btn-secondary" type="button" value="Submit" onclick="gJSON()">
-        <p id="jsontext"></p>
+        <div id="jsontext"></div>
     </div>
 </body>
 
